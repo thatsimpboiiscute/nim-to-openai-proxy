@@ -186,7 +186,7 @@ app.use((req, res, next) => {
 async function fetchLiveModelIds() {
   const response = await axios.get(`${NIM_API_BASE}/models`, {
     headers: {
-      Authorization: `Bearer ${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}`,
+      Authorization: `Bearer ${NIM_API_KEY}`,
       'Content-Type': 'application/json'
     },
     timeout: VALIDATION_TIMEOUT_MS
@@ -284,11 +284,11 @@ async function callWithFallback(baseRequest, models, enableThinking, clientReaso
 
     try {
       const res = await axios.post(
-        `${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}/chat/completions`,
+        `${NIM_API_BASE}/chat/completions`,
         fullRequest,
         {
           headers: {
-            Authorization: `Bearer ${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}`,
+            Authorization: `Bearer ${NIM_API_BASE}`,
             'Content-Type': 'application/json'
           },
           responseType: baseRequest.stream ? 'stream' : 'json',
