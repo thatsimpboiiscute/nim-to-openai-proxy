@@ -288,7 +288,7 @@ async function callWithFallback(baseRequest, models, enableThinking, clientReaso
         fullRequest,
         {
           headers: {
-            Authorization: `Bearer ${NIM_API_BASE}`,
+            Authorization: `Bearer ${NIM_API_KEY}`,
             'Content-Type': 'application/json'
           },
           responseType: baseRequest.stream ? 'stream' : 'json',
