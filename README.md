@@ -5,6 +5,8 @@ Due to personal health reasons, Jontte (original owner) will no longer be able t
 
 ### Reasoning officially works! Every model (that supports reasoning) works. To use reasoning, use the [optional environmental variables](#optional-environment-variables) section!
 
+# If you get the error 'Forbidden: Invalid or missing authentication', please attempt regenerating your API key, I’m still not sure as to what is causing this, but regenerating API key seems to work. (for me)
+
 
 ### NVIDIA NIM to OpenAI Proxy
 Hello, this is my first ever project on Github that I am making public. This is essentially just a translation layer between the API format that NVIDIA NIM uses to the format OpenAI uses. Jontte made this originally by building on a script from a Reddit guide. Over the time of a month he iterated on it, fixed problems, added auth, more models, and removed/replaced deprecated models.
@@ -47,6 +49,10 @@ Node.js 24+, a NVAPI/Nim API key, a deployment platform (though if you follow th
 | `google-lighter` | `poolside/laguna-xs-2.1` | Coding | Fast | Unknown (to me) |
 | `google-lightest` | `meta/muse-glimmer-30b` | Coding & Agentic work | Fast | Unknown (to me) |
 | `m3` | `minimaxai/minimax-m3` | Experimental | Medium-High | Unknown (to me) |
+| `llama-vision` | `meta/llama-3.2-11b-vision-instruct` | Vision/Multimodal tasks | Fast | Low |
+| `vision` | `meta/llama-3.2-11b-vision-instruct` | Vision/Multimodal (short alias) | Fast | Low |
+| `llama-vision-11b` | `meta/llama-3.2-11b-vision-instruct` | Vision/Multimodal 11B | Fast | Low |
+| `llama-3.2-vision` | `meta/llama-3.2-11b-vision-instruct` | Vision/Multimodal full name | Fast | Low |
 
 ### Filter Guide
 
